@@ -1,0 +1,31 @@
+{
+  "name": "typemaster-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alexandre-st/Typemaster-landing-page.git"
+  },
+  "keywords": [
+    "PARCEL",
+    "SASS"
+  ],
+  "author": "Alexandre-st",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre-st/Typemaster-landing-page/issues"
+  },
+  "homepage": "https://github.com/Alexandre-st/Typemaster-landing-page#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.2.1",
+    "parcel": "^2.2.1"
+  },
+  "dependencies": {
+    "sass": "^1.49.0"
+  }
+}
