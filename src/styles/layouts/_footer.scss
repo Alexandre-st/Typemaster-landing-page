@@ -1,6 +1,12 @@
+@use "../variables/mixins" as *;
+
 .footer {
   margin: 9.6rem 0 5rem 0;
   text-align: center;
+
+  @include mq(tablet) {
+    margin: 14.2rem 0 4.3rem 0;
+  }
 
   h4 {
     color: #7b8bad;
