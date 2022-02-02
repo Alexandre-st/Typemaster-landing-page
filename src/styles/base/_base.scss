@@ -38,6 +38,11 @@ p {
   border-radius: 0.8rem;
   background-color: #e8eff2;
 
+  &:hover {
+    background-color: #162542;
+    color: #ffffff;
+  }
+
   @include mq(tablet) {
     padding: 1.6rem 2.6rem;
   }
@@ -45,6 +50,10 @@ p {
   &-orange {
     background-color: #f16718;
     color: #ffffff;
+
+    &:hover {
+      background-color: #ff9b62;
+    }
   }
 }
 
