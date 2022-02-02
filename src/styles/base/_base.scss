@@ -52,3 +52,25 @@ p {
 .bloc-right {
   display: none;
 }
+
+.bloc-right {
+  @include mq(laptop) {
+    display: block;
+    position: absolute;
+    margin-right: -11rem;
+    right: 0;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.bloc-left {
+  @include mq(laptop) {
+    display: block;
+    position: absolute;
+    margin-left: -11rem;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+}

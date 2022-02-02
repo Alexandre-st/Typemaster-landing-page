@@ -15,12 +15,29 @@
     padding: 0 9.8rem 0 4rem;
   }
 
+  @include mq(laptop) {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 0 4rem 0 7rem;
+    flex-wrap: nowrap;
+    gap: 3rem;
+  }
+
+  @include mq(desktop) {
+    padding: 0;
+  }
+
   &-order {
     @include mq(tablet) {
       text-align: start;
       width: 25%;
       min-width: 28.1rem;
       margin-bottom: 2.2rem;
+    }
+
+    @include mq(laptop) {
+      width: 25.5rem;
+      min-width: 0;
     }
   }
 

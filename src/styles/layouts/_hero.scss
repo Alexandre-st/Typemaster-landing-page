@@ -2,6 +2,9 @@
 
 // HERO CONTENT
 .hero {
+  position: relative;
+  overflow: hidden;
+
   &-container {
     @include mq(tablet) {
       display: flex;
@@ -12,10 +15,15 @@
     }
 
     @include mq(laptop) {
-      max-width: 108.3rem;
+      position: relative;
+      max-width: 110rem;
       margin: 0 auto;
       margin-bottom: 3rem;
       gap: 9.5rem;
+    }
+
+    @include mq(desktop) {
+      gap: 12.5rem;
     }
   }
 
@@ -28,6 +36,10 @@
 
     @include mq(laptop) {
       padding: 0 0 0 7rem;
+    }
+
+    @include mq(desktop) {
+      padding: 0;
     }
   }
 
@@ -124,6 +136,8 @@
 
 // HERO DESCRIPTION
 .description {
+  position: relative;
+  overflow: hidden;
   @include mq(tablet) {
     padding: 0 4rem;
   }
@@ -142,6 +156,10 @@
       max-width: 110rem;
       margin: 0 auto;
     }
+
+    @include mq(desktop) {
+      padding: 0;
+    }
   }
 
   &-picture {
@@ -153,6 +171,10 @@
     @include mq(tablet) {
       margin: 0;
       gap: 3rem;
+    }
+
+    @include mq(laptop) {
+      z-index: 1;
     }
 
     &-left {

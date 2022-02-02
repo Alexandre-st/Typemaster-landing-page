@@ -8,6 +8,10 @@
     margin: 14.2rem 0 4.3rem 0;
   }
 
+  @include mq(desktop) {
+    margin: 12.8rem 0 4rem 0;
+  }
+
   h4 {
     color: #7b8bad;
     font-size: 1.6rem;
