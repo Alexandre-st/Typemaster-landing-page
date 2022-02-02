@@ -10,6 +10,10 @@
     padding: 4rem 4rem 6.1rem 3.9rem;
   }
 
+  @include mq(laptop) {
+    padding: 5.5rem 4rem 8.3rem 7rem;
+  }
+
   &-img {
     width: 4rem;
     height: 4rem;

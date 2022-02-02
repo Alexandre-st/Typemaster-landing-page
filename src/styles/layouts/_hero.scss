@@ -2,12 +2,21 @@
 
 // HERO CONTENT
 .hero {
-  @include mq(tablet) {
-    display: flex;
-    align-items: center;
-    gap: 6.9rem;
-    margin-bottom: 4.1rem;
-    overflow: hidden;
+  &-container {
+    @include mq(tablet) {
+      display: flex;
+      align-items: center;
+      gap: 6.9rem;
+      margin-bottom: 4.1rem;
+      overflow: hidden;
+    }
+
+    @include mq(laptop) {
+      max-width: 108.3rem;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      gap: 9.5rem;
+    }
   }
 
   &-content {
@@ -16,22 +25,53 @@
     @include mq(tablet) {
       padding: 0 0 0 3.9rem;
     }
+
+    @include mq(laptop) {
+      padding: 0 0 0 7rem;
+    }
   }
 
   &-title {
     font-size: 4.8rem;
     line-height: 4.8rem;
     text-transform: uppercase;
+
+    @include mq(laptop) {
+      font-size: 5.6rem;
+      line-height: 5.6rem;
+    }
   }
 
   &-description {
     padding: 3.2rem 0;
+
+    @include mq(tablet) {
+      padding: 3.4rem 0 3.9rem 0;
+    }
+
+    @include mq(laptop) {
+      font-size: 1.8rem;
+      padding: 2.4rem 0 4rem 0;
+    }
   }
 
   &-infos {
     display: flex;
     align-items: center;
     gap: 3.2rem;
+
+    @include mq(tablet) {
+      gap: 3.7rem;
+    }
+
+    @include mq(laptop) {
+      gap: 4rem;
+    }
+  }
+
+  &-release {
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   &-picture {
@@ -44,6 +84,10 @@
       margin-left: 0;
     }
 
+    @include mq(laptop) {
+      margin: 0;
+    }
+
     &-phone {
       @include mq(tablet) {
         display: none;
@@ -53,15 +97,27 @@
       display: none;
       @include mq(tablet) {
         display: block;
+
+        @include mq(laptop) {
+          display: none;
+        }
       }
     }
 
     &-desktop {
       display: none;
+
+      @include mq(laptop) {
+        display: block;
+      }
     }
 
     img {
       border-radius: 2rem 0 0 2rem;
+
+      @include mq(laptop) {
+        border-radius: 2rem;
+      }
     }
   }
 }
@@ -70,6 +126,22 @@
 .description {
   @include mq(tablet) {
     padding: 0 4rem;
+  }
+
+  @include mq(laptop) {
+    padding: 0;
+    margin-bottom: 16.8rem;
+  }
+
+  &-container {
+    @include mq(laptop) {
+      display: flex;
+      align-items: center;
+      gap: 12.5rem;
+      padding: 0 7rem;
+      max-width: 110rem;
+      margin: 0 auto;
+    }
   }
 
   &-picture {
@@ -122,6 +194,10 @@
       margin: 7.2rem 0 14.2rem 0;
     }
 
+    @include mq(laptop) {
+      margin: 0;
+    }
+
     &-text {
       margin: 7.5rem 0 11.1rem 0;
       text-align: center;
@@ -135,6 +211,12 @@
         padding: 0;
       }
 
+      @include mq(laptop) {
+        flex-direction: column;
+        gap: 2.4rem;
+        width: 25.5rem;
+      }
+
       &-title {
         font-size: 3.2rem;
         line-height: 3.6rem;
@@ -144,10 +226,19 @@
         @include mq(tablet) {
           padding: 0;
         }
+
+        @include mq(laptop) {
+          font-size: 3.2rem;
+          line-height: 3.6rem;
+        }
       }
 
       &-paragraph {
         margin-top: 2.4rem;
+
+        @include mq(laptop) {
+          margin: 0;
+        }
       }
     }
   }
