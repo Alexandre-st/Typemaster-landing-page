@@ -6,8 +6,7 @@
 }
 
 header {
-  max-width: 110rem;
-  margin: 0 auto;
+  @include container;
 }
 
 main {

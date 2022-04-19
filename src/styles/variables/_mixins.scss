@@ -16,3 +16,9 @@
     }
   }
 }
+
+// To not repeat my code
+@mixin container {
+  max-width: 110rem;
+  margin: 0 auto;
+}

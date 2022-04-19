@@ -15,9 +15,8 @@
     }
 
     @include mq(laptop) {
+      @include container;
       position: relative;
-      max-width: 110rem;
-      margin: 0 auto;
       margin-bottom: 3rem;
       gap: 9.5rem;
     }
@@ -138,6 +137,7 @@
 .description {
   position: relative;
   overflow: hidden;
+
   @include mq(tablet) {
     padding: 0 4rem;
   }
@@ -149,12 +149,11 @@
 
   &-container {
     @include mq(laptop) {
+      @include container;
       display: flex;
       align-items: center;
       gap: 12.5rem;
       padding: 0 7rem;
-      max-width: 110rem;
-      margin: 0 auto;
     }
 
     @include mq(desktop) {
